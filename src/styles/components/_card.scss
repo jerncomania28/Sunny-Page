@@ -1,0 +1,45 @@
+@import "../abstracts/color";
+@import "../abstracts/mixins";
+
+.card {
+  // min-width: 300px;
+  width: 300px;
+  // max-width: 350px;
+  // border: 1px solid black;
+  margin: 1rem;
+  padding: 1rem;
+
+  @include general--flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 70px;
+    border-radius: 100%;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin: 1rem 0rem;
+    text-align: center;
+    color: $very-dark-grayish-blue;
+    font-weight: lighter;
+  }
+
+  &__footer {
+    margin: 1rem 0rem;
+
+    &--header {
+      // color: $very-dark-grayish-blue;
+      font-size: 16px;
+      text-align: center;
+    }
+    &--text {
+      color: $very-dark-grayish-blue;
+      font-size: 12px;
+      text-align: center;
+      font-weight: lighter;
+    }
+  }
+}
